@@ -51,6 +51,8 @@ namespace ProjectSeaBattle
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.buttonGreate = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.flowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -309,11 +311,37 @@ namespace ProjectSeaBattle
             this.button14.TabIndex = 13;
             this.button14.UseVisualStyleBackColor = false;
             // 
+            // buttonGreate
+            // 
+            this.buttonGreate.BackColor = System.Drawing.Color.DarkOrange;
+            this.buttonGreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGreate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonGreate.Location = new System.Drawing.Point(131, 385);
+            this.buttonGreate.Name = "buttonGreate";
+            this.buttonGreate.Size = new System.Drawing.Size(135, 44);
+            this.buttonGreate.TabIndex = 23;
+            this.buttonGreate.Text = "Создать";
+            this.buttonGreate.UseVisualStyleBackColor = false;
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.BackColor = System.Drawing.Color.DarkOrange;
+            this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonClear.Location = new System.Drawing.Point(296, 385);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(135, 44);
+            this.buttonClear.TabIndex = 24;
+            this.buttonClear.Text = "Очистить";
+            this.buttonClear.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 461);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonGreate);
             this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.labelColor);
             this.Controls.Add(this.comboBoxThird);
@@ -354,6 +382,8 @@ namespace ProjectSeaBattle
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button buttonGreate;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
