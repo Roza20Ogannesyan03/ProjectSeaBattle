@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectSeaBattle
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -335,7 +335,7 @@ namespace ProjectSeaBattle
             this.buttonClear.Text = "Очистить";
             this.buttonClear.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -350,8 +350,8 @@ namespace ProjectSeaBattle
             this.Controls.Add(this.comboBoxSecond);
             this.Controls.Add(this.comboBoxFirst);
             this.Controls.Add(this.labelSize);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormMain";
+            this.Text = "FormMain";
             this.flowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
