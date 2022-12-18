@@ -82,6 +82,7 @@ namespace ProjectSeaBattle
             this.comboBoxFirst.Name = "comboBoxFirst";
             this.comboBoxFirst.Size = new System.Drawing.Size(135, 26);
             this.comboBoxFirst.TabIndex = 11;
+            this.comboBoxFirst.SelectedIndexChanged += new System.EventHandler(this.comboBoxFirst_SelectedIndexChanged);
             // 
             // comboBoxSecond
             // 
@@ -99,6 +100,7 @@ namespace ProjectSeaBattle
             this.comboBoxSecond.Name = "comboBoxSecond";
             this.comboBoxSecond.Size = new System.Drawing.Size(132, 26);
             this.comboBoxSecond.TabIndex = 12;
+            this.comboBoxSecond.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecond_SelectedIndexChanged);
             // 
             // textBox
             // 
@@ -138,6 +140,7 @@ namespace ProjectSeaBattle
             this.comboBoxThird.Name = "comboBoxThird";
             this.comboBoxThird.Size = new System.Drawing.Size(135, 26);
             this.comboBoxThird.TabIndex = 15;
+            this.comboBoxThird.SelectedIndexChanged += new System.EventHandler(this.comboBoxThird_SelectedIndexChanged);
             // 
             // labelColor
             // 
@@ -322,6 +325,7 @@ namespace ProjectSeaBattle
             this.buttonGreate.TabIndex = 23;
             this.buttonGreate.Text = "Создать";
             this.buttonGreate.UseVisualStyleBackColor = false;
+            this.buttonGreate.Click += new System.EventHandler(this.buttonGreate_Click);
             // 
             // buttonClear
             // 

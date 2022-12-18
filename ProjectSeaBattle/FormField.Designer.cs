@@ -29,10 +29,10 @@ namespace ProjectSeaBattle
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvField1 = new System.Windows.Forms.DataGridView();
             this.buttonToRun = new System.Windows.Forms.Button();
             this.buttonRestart = new System.Windows.Forms.Button();
@@ -53,10 +53,14 @@ namespace ProjectSeaBattle
             // 
             // dgvField1
             // 
+            this.dgvField1.AllowUserToAddRows = false;
+            this.dgvField1.AllowUserToDeleteRows = false;
             this.dgvField1.BackgroundColor = System.Drawing.Color.White;
             this.dgvField1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvField1.Location = new System.Drawing.Point(73, 74);
+            this.dgvField1.Location = new System.Drawing.Point(73, 42);
             this.dgvField1.Name = "dgvField1";
+            this.dgvField1.ReadOnly = true;
+            this.dgvField1.RowTemplate.ReadOnly = true;
             this.dgvField1.Size = new System.Drawing.Size(243, 243);
             this.dgvField1.TabIndex = 31;
             // 
@@ -114,9 +118,9 @@ namespace ProjectSeaBattle
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = null;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = null;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewImageColumn1.HeaderText = "Column1";
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.ReadOnly = true;
@@ -124,9 +128,9 @@ namespace ProjectSeaBattle
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = null;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = null;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewImageColumn2.HeaderText = "Column2";
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
@@ -134,9 +138,9 @@ namespace ProjectSeaBattle
             // 
             // dataGridViewImageColumn3
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = null;
-            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.NullValue = null;
+            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewImageColumn3.HeaderText = "Column3";
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
@@ -144,9 +148,9 @@ namespace ProjectSeaBattle
             // 
             // dataGridViewImageColumn4
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = null;
-            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.NullValue = null;
+            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewImageColumn4.HeaderText = "Column4";
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
@@ -212,6 +216,7 @@ namespace ProjectSeaBattle
             this.Controls.Add(this.dgvField1);
             this.Name = "FormField";
             this.Text = "FormField";
+            this.Load += new System.EventHandler(this.FormField_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvField1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvField2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMove)).EndInit();

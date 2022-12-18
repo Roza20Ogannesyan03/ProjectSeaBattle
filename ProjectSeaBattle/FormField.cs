@@ -15,6 +15,13 @@ namespace ProjectSeaBattle
         public FormField()
         {
             InitializeComponent();
+           
+        }
+        
+      
+        public void FormField_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }
