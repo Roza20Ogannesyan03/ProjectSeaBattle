@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectSeaBattle
 {
-    public partial class Form1 : Form
+    public partial class FormField : Form
     {
-        public Form1()
+        public FormField()
         {
             InitializeComponent();
         }
