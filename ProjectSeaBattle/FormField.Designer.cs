@@ -29,215 +29,330 @@ namespace ProjectSeaBattle
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvField1 = new System.Windows.Forms.DataGridView();
+            this.dgvField = new System.Windows.Forms.DataGridView();
+            this.labelColor = new System.Windows.Forms.Label();
+            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.buttonToRun = new System.Windows.Forms.Button();
             this.buttonRestart = new System.Windows.Forms.Button();
-            this.dgvField2 = new System.Windows.Forms.DataGridView();
-            this.dgvMove = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.buttonLeft = new System.Windows.Forms.Button();
-            this.buttonRight = new System.Windows.Forms.Button();
-            this.buttonDown = new System.Windows.Forms.Button();
-            this.buttonUp = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvField1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvField2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMove)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvField)).BeginInit();
+            this.flowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvField1
+            // dgvField
             // 
-            this.dgvField1.AllowUserToAddRows = false;
-            this.dgvField1.AllowUserToDeleteRows = false;
-            this.dgvField1.BackgroundColor = System.Drawing.Color.White;
-            this.dgvField1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvField1.Location = new System.Drawing.Point(73, 42);
-            this.dgvField1.Name = "dgvField1";
-            this.dgvField1.ReadOnly = true;
-            this.dgvField1.RowTemplate.ReadOnly = true;
-            this.dgvField1.Size = new System.Drawing.Size(243, 243);
-            this.dgvField1.TabIndex = 31;
+            this.dgvField.AllowUserToAddRows = false;
+            this.dgvField.AllowUserToDeleteRows = false;
+            this.dgvField.BackgroundColor = System.Drawing.Color.White;
+            this.dgvField.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvField.Location = new System.Drawing.Point(66, 69);
+            this.dgvField.Name = "dgvField";
+            this.dgvField.ReadOnly = true;
+            this.dgvField.RowTemplate.ReadOnly = true;
+            this.dgvField.Size = new System.Drawing.Size(304, 295);
+            this.dgvField.TabIndex = 41;
+            // 
+            // labelColor
+            // 
+            this.labelColor.AutoSize = true;
+            this.labelColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelColor.Location = new System.Drawing.Point(455, 92);
+            this.labelColor.Name = "labelColor";
+            this.labelColor.Size = new System.Drawing.Size(263, 25);
+            this.labelColor.TabIndex = 42;
+            this.labelColor.Text = "Выберите цвета корблей";
+            // 
+            // flowLayoutPanel
+            // 
+            this.flowLayoutPanel.Controls.Add(this.button2);
+            this.flowLayoutPanel.Controls.Add(this.button1);
+            this.flowLayoutPanel.Controls.Add(this.button3);
+            this.flowLayoutPanel.Controls.Add(this.button4);
+            this.flowLayoutPanel.Controls.Add(this.button5);
+            this.flowLayoutPanel.Controls.Add(this.button6);
+            this.flowLayoutPanel.Controls.Add(this.button7);
+            this.flowLayoutPanel.Controls.Add(this.button8);
+            this.flowLayoutPanel.Controls.Add(this.button9);
+            this.flowLayoutPanel.Controls.Add(this.button10);
+            this.flowLayoutPanel.Controls.Add(this.button11);
+            this.flowLayoutPanel.Controls.Add(this.button12);
+            this.flowLayoutPanel.Controls.Add(this.button13);
+            this.flowLayoutPanel.Controls.Add(this.button14);
+            this.flowLayoutPanel.Controls.Add(this.button15);
+            this.flowLayoutPanel.Controls.Add(this.button16);
+            this.flowLayoutPanel.Controls.Add(this.button17);
+            this.flowLayoutPanel.Controls.Add(this.button18);
+            this.flowLayoutPanel.ForeColor = System.Drawing.Color.DarkGray;
+            this.flowLayoutPanel.Location = new System.Drawing.Point(475, 133);
+            this.flowLayoutPanel.Name = "flowLayoutPanel";
+            this.flowLayoutPanel.Size = new System.Drawing.Size(216, 109);
+            this.flowLayoutPanel.TabIndex = 43;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(3, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(39, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 30);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(75, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightGreen;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(111, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(30, 30);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Green;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(147, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(30, 30);
+            this.button5.TabIndex = 4;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGreen;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(183, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(30, 30);
+            this.button6.TabIndex = 5;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Indigo;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(3, 39);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(30, 30);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Purple;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(39, 39);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 30);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.MediumOrchid;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(75, 39);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(30, 30);
+            this.button9.TabIndex = 8;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Orchid;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(111, 39);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(30, 30);
+            this.button10.TabIndex = 9;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.HotPink;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(147, 39);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(30, 30);
+            this.button11.TabIndex = 10;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Pink;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(183, 39);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(30, 30);
+            this.button12.TabIndex = 11;
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(3, 75);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(30, 30);
+            this.button13.TabIndex = 12;
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(39, 75);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(30, 30);
+            this.button14.TabIndex = 13;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(75, 75);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(30, 30);
+            this.button15.TabIndex = 14;
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.SkyBlue;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(111, 75);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(30, 30);
+            this.button16.TabIndex = 15;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(147, 75);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(30, 30);
+            this.button17.TabIndex = 16;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.AliceBlue;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Location = new System.Drawing.Point(183, 75);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(30, 30);
+            this.button18.TabIndex = 17;
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // buttonToRun
             // 
-            this.buttonToRun.BackColor = System.Drawing.Color.White;
+            this.buttonToRun.BackColor = System.Drawing.Color.DarkOrange;
             this.buttonToRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonToRun.Location = new System.Drawing.Point(73, 339);
+            this.buttonToRun.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonToRun.Location = new System.Drawing.Point(491, 270);
             this.buttonToRun.Name = "buttonToRun";
-            this.buttonToRun.Size = new System.Drawing.Size(243, 40);
-            this.buttonToRun.TabIndex = 32;
+            this.buttonToRun.Size = new System.Drawing.Size(182, 44);
+            this.buttonToRun.TabIndex = 44;
             this.buttonToRun.Text = "Запустить";
             this.buttonToRun.UseVisualStyleBackColor = false;
             // 
             // buttonRestart
             // 
-            this.buttonRestart.BackColor = System.Drawing.Color.White;
+            this.buttonRestart.BackColor = System.Drawing.Color.DarkOrange;
             this.buttonRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRestart.Location = new System.Drawing.Point(73, 385);
+            this.buttonRestart.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonRestart.Location = new System.Drawing.Point(491, 320);
             this.buttonRestart.Name = "buttonRestart";
-            this.buttonRestart.Size = new System.Drawing.Size(243, 32);
-            this.buttonRestart.TabIndex = 33;
+            this.buttonRestart.Size = new System.Drawing.Size(182, 44);
+            this.buttonRestart.TabIndex = 45;
             this.buttonRestart.Text = "Начать заново";
             this.buttonRestart.UseVisualStyleBackColor = false;
-            // 
-            // dgvField2
-            // 
-            this.dgvField2.BackgroundColor = System.Drawing.Color.White;
-            this.dgvField2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvField2.Location = new System.Drawing.Point(377, 111);
-            this.dgvField2.Name = "dgvField2";
-            this.dgvField2.Size = new System.Drawing.Size(183, 183);
-            this.dgvField2.TabIndex = 34;
-            // 
-            // dgvMove
-            // 
-            this.dgvMove.AllowUserToAddRows = false;
-            this.dgvMove.AllowUserToDeleteRows = false;
-            this.dgvMove.AllowUserToResizeColumns = false;
-            this.dgvMove.AllowUserToResizeRows = false;
-            this.dgvMove.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMove.ColumnHeadersVisible = false;
-            this.dgvMove.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1,
-            this.dataGridViewImageColumn2,
-            this.dataGridViewImageColumn3,
-            this.dataGridViewImageColumn4});
-            this.dgvMove.Location = new System.Drawing.Point(607, 59);
-            this.dgvMove.Name = "dgvMove";
-            this.dgvMove.ReadOnly = true;
-            this.dgvMove.RowHeadersVisible = false;
-            this.dgvMove.RowTemplate.Height = 35;
-            this.dgvMove.Size = new System.Drawing.Size(143, 283);
-            this.dgvMove.TabIndex = 35;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.NullValue = null;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewImageColumn1.HeaderText = "Column1";
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            this.dataGridViewImageColumn1.Width = 35;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = null;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewImageColumn2.HeaderText = "Column2";
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Width = 35;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.NullValue = null;
-            this.dataGridViewImageColumn3.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewImageColumn3.HeaderText = "Column3";
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
-            this.dataGridViewImageColumn3.Width = 35;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = null;
-            this.dataGridViewImageColumn4.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewImageColumn4.HeaderText = "Column4";
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Width = 35;
-            // 
-            // buttonLeft
-            // 
-            this.buttonLeft.BackColor = System.Drawing.Color.White;
-            this.buttonLeft.Image = global::ProjectSeaBattle.Properties.Resources.left;
-            this.buttonLeft.Location = new System.Drawing.Point(725, 348);
-            this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(40, 40);
-            this.buttonLeft.TabIndex = 40;
-            this.buttonLeft.Tag = "1";
-            this.buttonLeft.UseVisualStyleBackColor = false;
-            // 
-            // buttonRight
-            // 
-            this.buttonRight.BackColor = System.Drawing.Color.White;
-            this.buttonRight.Image = global::ProjectSeaBattle.Properties.Resources.right;
-            this.buttonRight.Location = new System.Drawing.Point(679, 348);
-            this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(40, 40);
-            this.buttonRight.TabIndex = 39;
-            this.buttonRight.Tag = "1";
-            this.buttonRight.UseVisualStyleBackColor = false;
-            // 
-            // buttonDown
-            // 
-            this.buttonDown.BackColor = System.Drawing.Color.White;
-            this.buttonDown.Image = global::ProjectSeaBattle.Properties.Resources.down;
-            this.buttonDown.Location = new System.Drawing.Point(633, 348);
-            this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(40, 40);
-            this.buttonDown.TabIndex = 38;
-            this.buttonDown.Tag = "1";
-            this.buttonDown.UseVisualStyleBackColor = false;
-            // 
-            // buttonUp
-            // 
-            this.buttonUp.BackColor = System.Drawing.Color.White;
-            this.buttonUp.Image = global::ProjectSeaBattle.Properties.Resources.up;
-            this.buttonUp.Location = new System.Drawing.Point(587, 348);
-            this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(40, 40);
-            this.buttonUp.TabIndex = 36;
-            this.buttonUp.Tag = "1";
-            this.buttonUp.UseVisualStyleBackColor = false;
             // 
             // FormField
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonLeft);
-            this.Controls.Add(this.buttonRight);
-            this.Controls.Add(this.buttonDown);
-            this.Controls.Add(this.buttonUp);
-            this.Controls.Add(this.dgvMove);
-            this.Controls.Add(this.dgvField2);
+            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.buttonRestart);
             this.Controls.Add(this.buttonToRun);
-            this.Controls.Add(this.dgvField1);
+            this.Controls.Add(this.flowLayoutPanel);
+            this.Controls.Add(this.labelColor);
+            this.Controls.Add(this.dgvField);
             this.Name = "FormField";
             this.Text = "FormField";
             this.Load += new System.EventHandler(this.FormField_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvField1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvField2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMove)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvField)).EndInit();
+            this.flowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvField1;
+        private System.Windows.Forms.DataGridView dgvField;
+        private System.Windows.Forms.Label labelColor;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button buttonToRun;
         private System.Windows.Forms.Button buttonRestart;
-        private System.Windows.Forms.DataGridView dgvField2;
-        private System.Windows.Forms.DataGridView dgvMove;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
-        private System.Windows.Forms.Button buttonUp;
-        private System.Windows.Forms.Button buttonDown;
-        private System.Windows.Forms.Button buttonRight;
-        private System.Windows.Forms.Button buttonLeft;
     }
 }
