@@ -130,6 +130,7 @@ namespace ProjectSeaBattle
             this.Controls.Add(this.labelSize);
             this.Name = "FormMain";
             this.Text = "FormMain";
+           
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,20 +31,15 @@ namespace ProjectSeaBattle
             columns = int.Parse(comboBoxSecond.Text);
         }
 
-        private void comboBoxThird_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ships = int.Parse(comboBoxThird.Text);
-        }
 
         private void buttonGreate_Click(object sender, EventArgs e)
         {
             comboBoxFirst_SelectedIndexChanged(sender, e);
             comboBoxSecond_SelectedIndexChanged(sender, e);
-            comboBoxThird_SelectedIndexChanged(sender, e);
             FormField formField = new FormField();
             formField.Show();
         }
 
-       
+      
     }
 }
