@@ -12,36 +12,51 @@ namespace ProjectSeaBattle
 {
     public partial class FormField : Form
     {
+        Pen fill = new Pen(Color.White);
+        public int height;
+        public int width;
+
         public FormField()
         {
             InitializeComponent();
            
         }
-        
-        public int height;
-        public int width;
+
+        private void buttonColor_Click(object sender, EventArgs e)
+        {
+            fill.Color = ((Button)sender).BackColor;
+        }
+
+        private void dgvField_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvField.DefaultCellStyle.SelectionBackColor = fill.Color;
+            dgvField.CurrentCell.Style.BackColor = fill.Color;
+        }
 
         public void FormField_Load(object sender, EventArgs e)
         {
-            dgvField1.Height = 255;
-            dgvField1.Width = 255;
+            dgvField.ClearSelection();
+            dgvField.Height = 255;
+            dgvField.Width = 255;
             height = 250;
             width = 250;
             int columns = FormMain.columns;
             int widthCell = width / columns;
             int rows = FormMain.rows;
             int heightCell = height / rows;
-            dgvField1.ColumnHeadersVisible = false;
-            dgvField1.RowHeadersVisible = false;
+            dgvField.ColumnHeadersVisible = false;
+            dgvField.RowHeadersVisible = false;
             
             for (int i = 1; i <= columns; i++)
             {
                 string name = "column"+ i;
-                dgvField1.Columns.Add(new DataGridViewTextBoxColumn() { Name = name, Width = widthCell });
+                dgvField.Columns.Add(new DataGridViewTextBoxColumn() { Name = name, Width = widthCell });
             }
 
-            dgvField1.RowTemplate.Height = height / rows;
-            dgvField1.Rows.Add(rows);
+            dgvField.RowTemplate.Height = height / rows;
+            dgvField.Rows.Add(rows);
+            dgvField.ClearSelection();
+            dgvField.DefaultCellStyle.SelectionBackColor = Color.Purple;
         }
     }
 }

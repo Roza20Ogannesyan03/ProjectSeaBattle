@@ -68,6 +68,7 @@ namespace ProjectSeaBattle
             this.dgvField.RowTemplate.ReadOnly = true;
             this.dgvField.Size = new System.Drawing.Size(304, 295);
             this.dgvField.TabIndex = 41;
+            this.dgvField.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvField_CellClick);
             // 
             // labelColor
             // 
@@ -114,6 +115,7 @@ namespace ProjectSeaBattle
             this.button2.Size = new System.Drawing.Size(30, 30);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button1
             // 
@@ -124,6 +126,7 @@ namespace ProjectSeaBattle
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button3
             // 
@@ -134,6 +137,7 @@ namespace ProjectSeaBattle
             this.button3.Size = new System.Drawing.Size(30, 30);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button4
             // 
@@ -144,6 +148,7 @@ namespace ProjectSeaBattle
             this.button4.Size = new System.Drawing.Size(30, 30);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button5
             // 
@@ -154,6 +159,7 @@ namespace ProjectSeaBattle
             this.button5.Size = new System.Drawing.Size(30, 30);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button6
             // 
@@ -164,6 +170,7 @@ namespace ProjectSeaBattle
             this.button6.Size = new System.Drawing.Size(30, 30);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button7
             // 
@@ -174,6 +181,7 @@ namespace ProjectSeaBattle
             this.button7.Size = new System.Drawing.Size(30, 30);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button8
             // 
@@ -184,6 +192,7 @@ namespace ProjectSeaBattle
             this.button8.Size = new System.Drawing.Size(30, 30);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button9
             // 
@@ -194,6 +203,7 @@ namespace ProjectSeaBattle
             this.button9.Size = new System.Drawing.Size(30, 30);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button10
             // 
@@ -204,6 +214,7 @@ namespace ProjectSeaBattle
             this.button10.Size = new System.Drawing.Size(30, 30);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button11
             // 
@@ -214,6 +225,7 @@ namespace ProjectSeaBattle
             this.button11.Size = new System.Drawing.Size(30, 30);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button12
             // 
@@ -224,6 +236,7 @@ namespace ProjectSeaBattle
             this.button12.Size = new System.Drawing.Size(30, 30);
             this.button12.TabIndex = 11;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button13
             // 
@@ -234,6 +247,7 @@ namespace ProjectSeaBattle
             this.button13.Size = new System.Drawing.Size(30, 30);
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button14
             // 
@@ -244,6 +258,7 @@ namespace ProjectSeaBattle
             this.button14.Size = new System.Drawing.Size(30, 30);
             this.button14.TabIndex = 13;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button15
             // 
@@ -254,6 +269,7 @@ namespace ProjectSeaBattle
             this.button15.Size = new System.Drawing.Size(30, 30);
             this.button15.TabIndex = 14;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button16
             // 
@@ -264,6 +280,7 @@ namespace ProjectSeaBattle
             this.button16.Size = new System.Drawing.Size(30, 30);
             this.button16.TabIndex = 15;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button17
             // 
@@ -274,6 +291,7 @@ namespace ProjectSeaBattle
             this.button17.Size = new System.Drawing.Size(30, 30);
             this.button17.TabIndex = 16;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // button18
             // 
@@ -284,6 +302,7 @@ namespace ProjectSeaBattle
             this.button18.Size = new System.Drawing.Size(30, 30);
             this.button18.TabIndex = 17;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // buttonToRun
             // 

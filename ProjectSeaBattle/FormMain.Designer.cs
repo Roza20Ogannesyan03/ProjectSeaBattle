@@ -104,6 +104,7 @@ namespace ProjectSeaBattle
             this.buttonGreate.TabIndex = 24;
             this.buttonGreate.Text = "Создать";
             this.buttonGreate.UseVisualStyleBackColor = false;
+            this.buttonGreate.Click += new System.EventHandler(this.buttonGreate_Click);
             // 
             // buttonClear
             // 
