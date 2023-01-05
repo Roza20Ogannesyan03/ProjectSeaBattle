@@ -49,7 +49,7 @@ namespace ProjectSeaBattle
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.eraser = new System.Windows.Forms.Button();
             this.buttonToRun = new System.Windows.Forms.Button();
             this.buttonRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvField)).BeginInit();
@@ -99,11 +99,10 @@ namespace ProjectSeaBattle
             this.flowLayoutPanel.Controls.Add(this.button15);
             this.flowLayoutPanel.Controls.Add(this.button16);
             this.flowLayoutPanel.Controls.Add(this.button17);
-            this.flowLayoutPanel.Controls.Add(this.button18);
-            this.flowLayoutPanel.ForeColor = System.Drawing.Color.DarkGray;
+            this.flowLayoutPanel.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanel.Location = new System.Drawing.Point(475, 133);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(216, 109);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(236, 115);
             this.flowLayoutPanel.TabIndex = 43;
             // 
             // button2
@@ -293,16 +292,18 @@ namespace ProjectSeaBattle
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.buttonColor_Click);
             // 
-            // button18
+            // eraser
             // 
-            this.button18.BackColor = System.Drawing.Color.AliceBlue;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(183, 75);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(30, 30);
-            this.button18.TabIndex = 17;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.buttonColor_Click);
+            this.eraser.BackColor = System.Drawing.Color.White;
+            this.eraser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eraser.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.eraser.Location = new System.Drawing.Point(658, 208);
+            this.eraser.Name = "eraser";
+            this.eraser.Size = new System.Drawing.Size(45, 30);
+            this.eraser.TabIndex = 17;
+            this.eraser.Text = "Ластик";
+            this.eraser.UseVisualStyleBackColor = false;
+            this.eraser.Click += new System.EventHandler(this.buttonColor_Click);
             // 
             // buttonToRun
             // 
@@ -334,6 +335,7 @@ namespace ProjectSeaBattle
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 450);
+            this.Controls.Add(this.eraser);
             this.Controls.Add(this.buttonRestart);
             this.Controls.Add(this.buttonToRun);
             this.Controls.Add(this.flowLayoutPanel);
@@ -371,7 +373,7 @@ namespace ProjectSeaBattle
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button eraser;
         private System.Windows.Forms.Button buttonToRun;
         private System.Windows.Forms.Button buttonRestart;
     }
