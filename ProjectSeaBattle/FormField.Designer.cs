@@ -76,9 +76,9 @@ namespace ProjectSeaBattle
             this.labelColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelColor.Location = new System.Drawing.Point(455, 92);
             this.labelColor.Name = "labelColor";
-            this.labelColor.Size = new System.Drawing.Size(263, 25);
+            this.labelColor.Size = new System.Drawing.Size(275, 25);
             this.labelColor.TabIndex = 42;
-            this.labelColor.Text = "Выберите цвета корблей";
+            this.labelColor.Text = "Выберите цвета кораблей";
             // 
             // flowLayoutPanel
             // 
