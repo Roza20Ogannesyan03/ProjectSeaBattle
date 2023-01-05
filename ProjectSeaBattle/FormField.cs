@@ -60,12 +60,18 @@ namespace ProjectSeaBattle
             dgvField.RowTemplate.Height = height / rows;
             dgvField.Rows.Add(rows);
             dgvField.ClearSelection();
-            dgvField.DefaultCellStyle.SelectionBackColor = Color.Purple;
+            
         }
 
         private void buttonRestart_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    dgvField.Rows[i].Cells[j].Style.BackColor = Color.White;
+                }
+            }
         }
     }
 }
