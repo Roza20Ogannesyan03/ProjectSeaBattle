@@ -40,6 +40,10 @@ namespace ProjectSeaBattle
             formField.Show();
         }
 
-      
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            comboBoxFirst.ResetText();
+            comboBoxSecond.ResetText();
+        }
     }
 }

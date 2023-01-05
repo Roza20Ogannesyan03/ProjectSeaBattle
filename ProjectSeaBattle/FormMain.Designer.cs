@@ -117,6 +117,7 @@ namespace ProjectSeaBattle
             this.buttonClear.TabIndex = 25;
             this.buttonClear.Text = "Очистить";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // FormMain
             // 
