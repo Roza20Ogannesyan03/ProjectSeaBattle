@@ -73,5 +73,13 @@ namespace ProjectSeaBattle
                 }
             }
         }
+
+        private void buttonToRun_Click(object sender, EventArgs e)
+        {
+            if (dgvField.DefaultCellStyle.SelectionBackColor == Color.White)
+            {
+                MessageBox.Show("Вы не выбрали цвета!");
+            }
+        }
     }
 }

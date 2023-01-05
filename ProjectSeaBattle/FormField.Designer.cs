@@ -316,6 +316,7 @@ namespace ProjectSeaBattle
             this.buttonToRun.TabIndex = 44;
             this.buttonToRun.Text = "Запустить";
             this.buttonToRun.UseVisualStyleBackColor = false;
+            this.buttonToRun.Click += new System.EventHandler(this.buttonToRun_Click);
             // 
             // buttonRestart
             // 
