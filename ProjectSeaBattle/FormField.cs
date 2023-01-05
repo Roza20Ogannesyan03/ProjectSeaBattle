@@ -12,9 +12,13 @@ namespace ProjectSeaBattle
 {
     public partial class FormField : Form
     {
-        Pen fill = new Pen(Color.White);
+        public Pen fill = new Pen(Color.White);
         public int height;
         public int width;
+        public int columns;
+        public int widthCell;
+        public int rows;
+        public int heightCell;
 
         public FormField()
         {
@@ -40,10 +44,10 @@ namespace ProjectSeaBattle
             dgvField.Width = 255;
             height = 250;
             width = 250;
-            int columns = FormMain.columns;
-            int widthCell = width / columns;
-            int rows = FormMain.rows;
-            int heightCell = height / rows;
+            columns = FormMain.columns;
+            widthCell = width / columns;
+            rows = FormMain.rows;
+            heightCell = height / rows;
             dgvField.ColumnHeadersVisible = false;
             dgvField.RowHeadersVisible = false;
             
@@ -57,6 +61,14 @@ namespace ProjectSeaBattle
             dgvField.Rows.Add(rows);
             dgvField.ClearSelection();
             dgvField.DefaultCellStyle.SelectionBackColor = Color.Purple;
+        }
+
+        private void buttonRestart_Click(object sender, EventArgs e)
+        {
+            if (dgvField.DefaultCellStyle.SelectionBackColor == Color.White)
+            {
+                MessageBox.Show("Вы не выбрали цвета!");
+            }
         }
     }
 }

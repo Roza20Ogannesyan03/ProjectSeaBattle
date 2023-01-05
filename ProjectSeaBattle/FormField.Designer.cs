@@ -327,6 +327,7 @@ namespace ProjectSeaBattle
             this.buttonRestart.TabIndex = 45;
             this.buttonRestart.Text = "Начать заново";
             this.buttonRestart.UseVisualStyleBackColor = false;
+            this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
             // 
             // FormField
             // 
