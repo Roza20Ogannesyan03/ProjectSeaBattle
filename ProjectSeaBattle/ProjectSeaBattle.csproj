@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateGrid.cs" />
+    <Compile Include="FormLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevel.Designer.cs">
+      <DependentUpon>FormLevel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormField.resx">
       <DependentUpon>FormField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevel.resx">
+      <DependentUpon>FormLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
