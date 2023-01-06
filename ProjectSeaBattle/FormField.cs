@@ -39,28 +39,7 @@ namespace ProjectSeaBattle
 
         public void FormField_Load(object sender, EventArgs e)
         {
-            dgvField.ClearSelection();
-            dgvField.Height = 255;
-            dgvField.Width = 255;
-            height = 250;
-            width = 250;
-            columns = FormMain.columns;
-            widthCell = width / columns;
-            rows = FormMain.rows;
-            heightCell = height / rows;
-            dgvField.ColumnHeadersVisible = false;
-            dgvField.RowHeadersVisible = false;
-            
-            for (int i = 1; i <= columns; i++)
-            {
-                string name = "column"+ i;
-                dgvField.Columns.Add(new DataGridViewTextBoxColumn() { Name = name, Width = widthCell });
-            }
-
-            dgvField.RowTemplate.Height = height / rows;
-            dgvField.Rows.Add(rows);
-            dgvField.ClearSelection();
-            
+            CreateGrid cg = new CreateGrid(dgvField);
         }
 
         private void buttonRestart_Click(object sender, EventArgs e)
@@ -80,6 +59,16 @@ namespace ProjectSeaBattle
             {
                 MessageBox.Show("Вы не выбрали цвета!");
             }
+            else
+            {
+                FormLevel fl = new FormLevel();
+                fl.Show();
+            }
+        }
+
+        private void dgvField_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

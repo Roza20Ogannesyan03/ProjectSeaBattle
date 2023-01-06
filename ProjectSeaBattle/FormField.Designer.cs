@@ -69,6 +69,7 @@ namespace ProjectSeaBattle
             this.dgvField.Size = new System.Drawing.Size(304, 295);
             this.dgvField.TabIndex = 41;
             this.dgvField.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvField_CellClick);
+            this.dgvField.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvField_CellContentClick);
             // 
             // labelColor
             // 
